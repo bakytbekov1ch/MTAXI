@@ -1,0 +1,36 @@
+@import "../../mixin/mixin";
+
+.hero {
+  margin-top: 20px;
+
+  .hero__content {
+    @include flexbox(space-around, center);
+    gap: 10px;
+
+    .hero__data {
+      width: 100%;
+      height: 80px;
+      border: 2px solid black;
+      border-radius: 7px;
+      background: #00000014;
+      @include flexbox(center, center);
+      flex-direction: column;
+      gap: 5px;
+
+      h1 {
+        color: black;
+        font-size: 27px;
+        font-weight: 500;
+        font-family: "Roboto";
+      }
+
+      h3 {
+        color: black;
+        font-size: 13px;
+        font-weight: 400;
+        font-family: "Roboto";
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}

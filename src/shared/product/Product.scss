@@ -1,0 +1,53 @@
+@import "../../mixin/mixin";
+
+.product {
+  margin: 20px 0;
+  .product__content {
+    @include flexbox(space-around, center);
+
+    .product__data {
+      width: 200px;
+      border: 1px solid black;
+      padding: 15px 5px;
+      border-radius: 5px;
+
+      img {
+        width: 100%;
+        height: 150px;
+        object-fit: contain;
+        border-radius: 3px;
+      }
+
+      .product__text {
+        h1 {
+          height: 25px;
+          color: black;
+          font-size: 20px;
+          font-weight: 500;
+          font-family: "Roboto";
+          letter-spacing: 0.3px;
+        }
+
+        h2 {
+          height: 30px;
+          color: black;
+          font-size: 14px;
+          font-weight: 500;
+          font-family: "Roboto";
+          letter-spacing: 0.3px;
+        }
+
+        .product__time {
+          @include flexbox(space-between, center);
+
+          h3 {
+            color: black;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: "Roboto";
+          }
+        }
+      }
+    }
+  }
+}
